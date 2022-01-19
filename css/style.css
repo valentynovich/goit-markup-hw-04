@@ -130,8 +130,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--paragraph);
-  /* display: flex;
-  align-items: center; */
+  display: flex;
+  align-items: center;
 }
 
 .header-tell-icon,
@@ -158,6 +158,9 @@ img {
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -198,29 +201,21 @@ img {
   padding-top: 94px;
 }
 
-.benefits-icon-list {
-  display: flex;
-}
-
 .benefits-icon-item {
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-
-.benefits-icon-item:not(:last-child) {
-  margin-right: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .benefits-icon {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
   margin: 25px 100px 25px 100px;
 }
 
-.benefits-icon-item:not(:last-child) {
+/* .benefits-icon-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .benefits-item:not(:last-child) {
   margin-right: 30px;
@@ -337,7 +332,8 @@ img {
 
 .team-social-list {
   display: flex;
-  margin: 16px 32px 0 32px;
+  margin-top: 16px;
+  justify-content: center;
 }
 
 .team-social-item:not(:last-child) {
@@ -426,6 +422,7 @@ img {
 
 .footer-div {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-div-address-logo {
@@ -474,9 +471,9 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-div-social-icon {
-  padding-top: 12px;
-}
+/* .footer-div-social-icon {
+  align-items: baseline;
+} */
 
 .footer-social-titel {
   font-style: normal;
@@ -534,6 +531,7 @@ img {
 }
 
 .portfolio-btn {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -564,8 +562,12 @@ img {
   margin: 15px;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
